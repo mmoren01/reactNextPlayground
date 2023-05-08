@@ -33,15 +33,17 @@ export default function Home({ allPostsData }: Props): JSX.Element {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi there! My name is Mauricio - pronounced <em>maw-REE-see-oh</em>, but you may also call me Mo if that's easier – great to meet you!
+          Hi there! I'm Mauricio (maw-REE-see-oh), but feel free to call me Mo. It's a pleasure to meet you!
         </p>
         <p>
-          I'm a software engineer based in Phoenix, Arizona, and I love putzing around on my Triumph Street Twin. When I'm not busy chatting it up with those two pictured above about some piece of code, you can find me being a dad at your local park or museum. Feel free to connect with me on <Link href="https://www.linkedin.com/in/mauricio-moreno-swe">LinkedIn</Link> – I'd love to chat about business, bikes, or the best pizza joints in town.
+          I'm a Phoenix-based software engineer driven by my passion for building stuff and my love for continuous learning. When I'm not immersed in code or engaging in tech discussions with my fellow engineers pictured above, I enjoy working on my Triumph Street Twin and discovering new adventures in Phoenix with my family. Let's connect on <Link href="https://www.linkedin.com/in/mauricio-moreno-swe">LinkedIn</Link> and chat about anything from coding and business to bikes and the finest pizza joints in town.
         </p>
-        <p>Thanks for dropping by!</p>
+        <p>
+          Thanks for stopping by, and don't hesitate to reach out!
+        </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}></h2>
+        <h2 className={utilStyles.headingLg}>Blog Posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title}) => (
             <li className={utilStyles.listItem} key={id}>
