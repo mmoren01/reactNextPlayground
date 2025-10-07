@@ -8,11 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.4",
+    "@tanstack/react-query": "^5.90.2",
     "date-fns": "^2.22.1",
+    "framer-motion": "^12.23.22",
     "gray-matter": "^4.0.3",
-    "next": "^13.3.0",
-    "react": "18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "^15.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
   },

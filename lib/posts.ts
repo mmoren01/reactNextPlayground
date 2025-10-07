@@ -3,26 +3,23 @@ import html from 'remark-html'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import { PostData, PostDataWithContent } from '../types/post'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
-export function getSortedPostsData() {
-  //GET FILES IN POSTS DIRECTORY IN ROOT/CURRENT WORKING DIRECTORY
+export function getSortedPostsData(): PostData[] {
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostData = fileNames.map(fileName => {
-    //REMOVES .md FROM FILE NAME TO GET ID
     const id = fileName.replace(/\.md$/, '')
 
-    //READS MARKDOWN AS A STRING
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-    //RETURNS META DATA IN MARKDOWN FILE
     const matterResult = matter(fileContents)
 
     return {
       id,
-      ...matterResult.data
+      ...(matterResult.data as { date: string; title: string })
     }
   })
 
@@ -36,8 +33,8 @@ export function getSortedPostsData() {
 }
 
 export function getAllPostIds() {
-  const fileName = fs.readdirSync(postsDirectory)
-  return fileName.map(fileName => {
+  const fileNames = fs.readdirSync(postsDirectory)
+  return fileNames.map(fileName => {
     return {
       params: {
         id: fileName.replace(/\.md$/, '')
@@ -46,11 +43,10 @@ export function getAllPostIds() {
   })
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string): Promise<PostDataWithContent> {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-  //USES GRAY-MATTER TO PARSE THE POST META DATA
   const matterResult = matter(fileContents)
   const processedContent = await remark()
     .use(html)
@@ -60,6 +56,6 @@ export async function getPostData(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data
+    ...(matterResult.data as { date: string; title: string })
   }
 }
