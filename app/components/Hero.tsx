@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Typography, Button, Container } from '@mui/material';
+import { Box, Typography, Button, Container, Tooltip } from '@mui/material';
 import { motion } from 'framer-motion';
 import { keyframes } from '@mui/material/styles';
 
@@ -115,21 +115,40 @@ export default function Hero() {
           </Typography>
 
           <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                background: 'linear-gradient(135deg, #FF0080 0%, #A855F7 100%)',
-                '&:hover': {
-                  background: 'linear-gradient(135deg, #CC0066 0%, #8844CC 100%)',
-                  transform: 'translateY(-2px)',
-                  boxShadow: '0 8px 24px rgba(255, 0, 128, 0.4)',
-                },
-                transition: 'all 0.3s ease',
+            <Tooltip
+              title="Coming Soon - Curating Projects"
+              arrow
+              placement="top"
+              slotProps={{
+                tooltip: {
+                  sx: {
+                    bgcolor: 'rgba(168, 85, 247, 0.95)',
+                    fontSize: '0.875rem',
+                    py: 1,
+                    px: 2,
+                  }
+                }
               }}
             >
-              View My Work
-            </Button>
+              <span>
+                <Button
+                  variant="contained"
+                  size="large"
+                  disabled
+                  sx={{
+                    background: 'linear-gradient(135deg, #FF0080 0%, #A855F7 100%)',
+                    '&:hover': {
+                      background: 'linear-gradient(135deg, #CC0066 0%, #8844CC 100%)',
+                      transform: 'translateY(-2px)',
+                      boxShadow: '0 8px 24px rgba(255, 0, 128, 0.4)',
+                    },
+                    transition: 'all 0.3s ease',
+                  }}
+                >
+                  View My Work
+                </Button>
+              </span>
+            </Tooltip>
             <Button
               variant="outlined"
               size="large"
