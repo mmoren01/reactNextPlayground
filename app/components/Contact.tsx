@@ -6,26 +6,26 @@ import { useState } from 'react';
 import SendIcon from '@mui/icons-material/Send';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: '',
+  // });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // TODO: Hook up to backend later
-    alert('Thanks for reaching out! (Form submission will be connected to backend later)');
-    setFormData({ name: '', email: '', message: '' });
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  //   // TODO: Hook up to backend later
+  //   alert('Thanks for reaching out! (Form submission will be connected to backend later)');
+  //   setFormData({ name: '', email: '', message: '' });
+  // };
 
   return (
     <Box
@@ -70,7 +70,7 @@ export default function Contact() {
             Have a project in mind or just want to chat? I'd love to hear from you!
           </Typography>
 
-          <Paper
+          {/* <Paper
             elevation={0}
             sx={{
               p: { xs: 4, md: 6 },
@@ -208,7 +208,31 @@ export default function Contact() {
                 </Button>
               </Stack>
             </Box>
-          </Paper>
+          </Paper> */}
+          <Stack direction="row" justifyContent="center" sx={{ mt: 2 }}>
+            <Button
+              variant="contained"
+              size="large"
+              href="mailto:mmoren01@pm.me"
+              startIcon={<SendIcon />}
+              sx={{
+                background: 'linear-gradient(135deg, #FF0080 0%, #A855F7 100%)',
+                py: 1.5,
+                px: 4,
+                minWidth: '200px',
+                fontSize: '1.1rem',
+                fontWeight: 600,
+                '&:hover': {
+                  background: 'linear-gradient(135deg, #CC0066 0%, #8844CC 100%)',
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 8px 24px rgba(255, 0, 128, 0.4)',
+                },
+                transition: 'all 0.3s ease',
+              }}
+            >
+              Email Me
+            </Button>
+          </Stack>
         </motion.div>
       </Container>
     </Box>
