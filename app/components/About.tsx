@@ -114,7 +114,7 @@ export default function About() {
                 lineHeight: 1.8,
               }}
             >
-              When I'm not coding, I enjoy working on my Triumph Street Twin and exploring Charlotte
+              When I'm not coding, I enjoy working on one of my motorcycles and exploring Charlotte
               with my family. I'm always open to discussing new opportunities, interesting projects,
               or just connecting with fellow developers.
             </Typography>
