@@ -152,6 +152,7 @@ export default function Hero() {
             <Button
               variant="outlined"
               size="large"
+              href="#contact"
               sx={{
                 borderColor: '#00F0FF',
                 color: '#00F0FF',

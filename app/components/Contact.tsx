@@ -29,6 +29,7 @@ export default function Contact() {
 
   return (
     <Box
+      id="contact"
       component="section"
       sx={{
         py: 12,
