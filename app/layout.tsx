@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 
 import { Providers } from './providers'
+import WIPBadge from './components/WIP-Badge'
 import '../styles/global.css'
 
 export const metadata: Metadata = {
@@ -30,7 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <WIPBadge />
+            {children}
+        </Providers>
       </body>
     </html>
   )
