@@ -5,24 +5,24 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    category: 'Frontend',
+    category: 'Frontend Development',
     color: '#FF0080',
-    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Material UI', 'Tailwind CSS', 'Redux'],
+    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'React Query', 'GraphQL'],
   },
   {
-    category: 'Backend & Database',
+    category: 'Testing & Quality',
     color: '#00F0FF',
-    skills: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Firebase', 'REST APIs', 'GraphQL'],
+    skills: ['Jest', 'React Testing Library', 'TDD', 'A/B Testing (Split.io)'],
   },
   {
-    category: 'Tools & Platforms',
+    category: 'Analytics & Observability',
     color: '#A855F7',
-    skills: ['Git', 'GitHub', 'VS Code', 'Docker', 'Vercel', 'Netlify', 'npm/yarn', 'Webpack'],
+    skills: ['Google Tag Manager', 'Segment', 'Amplitude', 'Branch', 'Datadog'],
   },
   {
-    category: 'Other',
+    category: 'Developer Experience',
     color: '#FF6B35',
-    skills: ['Responsive Design', 'Performance Optimization', 'Testing', 'Agile', 'UI/UX Design'],
+    skills: ['GitHub Copilot', 'Claude Code', 'Cursor', 'ChatGPT', 'GitHub Workflows', 'CI/CD'],
   },
 ];
 
