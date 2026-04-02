@@ -7,22 +7,27 @@ const skillCategories = [
   {
     category: 'Frontend Development',
     color: '#FF0080',
-    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'React Query', 'GraphQL'],
+    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'React Query'],
   },
   {
-    category: 'Testing & Quality',
-    color: '#00F0FF',
-    skills: ['Jest', 'React Testing Library', 'TDD', 'A/B Testing (Split.io)'],
+    category: 'Payments & Auth',
+    color: '#00C896',
+    skills: ['Stripe', 'OAuth 2.0', 'Okta', 'Google Sign-In'],
   },
   {
-    category: 'Analytics & Observability',
+    category: 'Analytics & Attribution',
     color: '#A855F7',
-    skills: ['Google Tag Manager', 'Segment', 'Amplitude', 'Branch', 'Datadog'],
+    skills: ['Firebase', 'Amplitude', 'AppsFlyer', 'Segment', 'Google Ads / ROAS', 'Datadog'],
   },
   {
-    category: 'Developer Experience',
+    category: 'Mobile & iOS',
+    color: '#00F0FF',
+    skills: ['Swift', 'iOS', 'Objective-C', 'XCTest', 'Firebase SDK'],
+  },
+  {
+    category: 'Developer Experience & Testing',
     color: '#FF6B35',
-    skills: ['GitHub Copilot', 'Claude Code', 'Cursor', 'ChatGPT', 'GitHub Workflows', 'CI/CD'],
+    skills: ['GitHub Copilot', 'Claude Code', 'Cursor', 'GitHub Workflows', 'CI/CD', 'Jest', 'React Testing Library', 'A/B Testing (Split.io)'],
   },
 ];
 

@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 
 import { Providers } from './providers'
-import WIPBadge from './components/WIP-Badge'
 import '../styles/global.css'
 
 export const metadata: Metadata = {
@@ -32,8 +31,7 @@ export default function RootLayout({
     <html lang="en" style={{ scrollBehavior: 'smooth' }}>
       <body>
         <Providers>
-          <WIPBadge />
-            {children}
+          {children}
         </Providers>
       </body>
     </html>

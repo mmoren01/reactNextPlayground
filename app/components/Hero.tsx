@@ -97,8 +97,8 @@ export default function Hero() {
               fontWeight: 500,
             }}
           >
-            Frontend Developer building <span style={{ color: '#FF0080' }}>scalable</span>,{' '}
-            <span style={{ color: '#00F0FF' }}>user-focused</span> web applications
+            Software Engineer building systems that move <span style={{ color: '#FF0080' }}>business critical metrics</span>{' — '}
+            <span style={{ color: '#00F0FF' }}>payments, analytics pipelines</span>, and the tooling decisions that make them possible.
           </Typography>
 
           <Typography
@@ -110,8 +110,7 @@ export default function Hero() {
               fontSize: { xs: '1rem', md: '1.25rem' },
             }}
           >
-            Specializing in React, Next.js, and modern web technologies.
-            Passionate about creating exceptional digital experiences through clean code and thoughtful design.
+            From Stripe Billing Portal integrations to iOS analytics infrastructure to support marketing spend — I gravitate toward the work that has a measurable business consequence.
           </Typography>
 
           <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>

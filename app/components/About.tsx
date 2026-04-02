@@ -85,10 +85,11 @@ export default function About() {
                 lineHeight: 1.8,
               }}
             >
-              I'm a <strong style={{ color: '#FF0080' }}>frontend engineer</strong> based in Charlotte, NC,
-              specializing in building modern, responsive web applications with <strong style={{ color: '#00F0FF' }}>React</strong>,
-              <strong style={{ color: '#00F0FF' }}> Next.js</strong>, and TypeScript.
-              I'm driven by a passion for solving complex problems and delivering exceptional user experiences.
+              I'm a <strong style={{ color: '#FF0080' }}>Software Engineer</strong> based in Phoenix, AZ
+              with 4+ years building revenue-critical systems at scale. I gravitate toward complex,
+              cross-functional work — <strong style={{ color: '#00F0FF' }}>payments infrastructure</strong>,{' '}
+              <strong style={{ color: '#00F0FF' }}>analytics pipelines</strong>, and the engineering
+              decisions that have a direct business consequence.
             </Typography>
 
             <Typography
@@ -114,7 +115,7 @@ export default function About() {
                 lineHeight: 1.8,
               }}
             >
-              When I'm not coding, I enjoy working on one of my motorcycles and exploring Charlotte
+              When I'm not coding, I enjoy working on one of my motorcycles and exploring Phoenix
               with my family. I'm always open to discussing new opportunities, interesting projects,
               or just connecting with fellow developers.
             </Typography>
